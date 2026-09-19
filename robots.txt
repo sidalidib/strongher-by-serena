@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://strongherbyserena.netlify.app/sitemap.xml
+Sitemap: https://strongher-by-serena.vercel.app/sitemap.xml
