@@ -22,24 +22,26 @@ Document de contrôle : à quoi sert chaque fichier du projet, et à quoi sert c
 
 ## Partie 2 — Les comptes/plateformes utilisés
 
-| Compte | À quoi il sert | Qui l'utilise / quand le consulter |
-|---|---|---|
-| **GitHub** | Stocke le code du site et tout son historique de versions — la "source de vérité" du projet. Chaque mise à jour part de là. | Rarement à consulter toi-même ; c'est l'étape technique gérée à chaque modification. |
-| **Vercel** | Héberge le site et le rend accessible publiquement sur internet. Connecté à GitHub : republie automatiquement le site à chaque mise à jour. | À vérifier après une modification, pour confirmer que le site est bien à jour en ligne. |
-| **Google Forms** | Reçoit toutes les demandes envoyées via les formulaires du site (devis de coaching + demandes de guide gratuit). | Pas besoin d'y retourner une fois configuré — tout passe par le Google Sheet. |
-| **Google Sheets** | Le tableau où toutes les réponses du Google Form s'accumulent automatiquement, ligne par ligne. | **À consulter très régulièrement (idéalement tous les jours)** — c'est ta liste de prospectes à recontacter. |
-| **Google Analytics 4** | Mesure le trafic du site : nombre de visiteurs, d'où ils viennent (Instagram, Google, direct...), quelles pages ils consultent. | À consulter chaque semaine pour voir si le trafic progresse et d'où il vient. |
-| **Google Search Console** | Surveille comment Google "voit" ton site : pages indexées, erreurs éventuelles, requêtes qui amènent des visiteurs jusqu'à toi. | À consulter une fois par mois environ, plus souvent juste après la mise en ligne. |
-| **Google Business Profile** | Fiche gratuite pouvant apparaître dans les résultats Google/Maps, avec avis clients. Renforce la crédibilité locale même pour un service 100% en ligne. | À consulter dès qu'un avis client arrive, pour le voir et éventuellement y répondre. |
-| **Instagram** (`@serena.inspires`) | Canal principal de contenu et de preuve sociale, relié au site dans les deux sens (lien dans le site, lien en bio Instagram). | Ton usage habituel — le site vient en complément, pas en remplacement. |
-| **Registrar de domaine** *(optionnel, pas encore actif)* | Si tu achètes un jour un nom de domaine personnalisé (`.com`/`.dz`) plutôt que l'adresse `vercel.app` par défaut. | À activer seulement si/quand tu veux franchir cette étape. |
+| Compte | À quoi il sert | Quand le consulter | Quoi faire concrètement une fois dessus |
+|---|---|---|---|
+| **GitHub** | Stocke le code du site et tout son historique de versions — la "source de vérité" du projet. | Rarement, sauf pour vérifier un historique de changement. | Onglet **"Commits"** : vérifier que le dernier commit correspond bien au dernier changement fait. |
+| **Vercel** | Héberge le site et le rend accessible publiquement. Connecté à GitHub : republie automatiquement à chaque mise à jour. | **Après chaque modification envoyée sur GitHub**, pour confirmer la mise en ligne. | Onglet **"Deployments"** : le dernier doit être marqué **"Ready"** (vert). S'il est **"Failed"** (rouge/erreur), cliquer dessus pour voir le message d'erreur, ou revenir vers l'assistance technique avec une capture d'écran. |
+| **Google Forms** | Reçoit toutes les demandes envoyées via les formulaires du site (devis de coaching + demandes de guide gratuit). | Seulement si tu changes un jour les questions du formulaire. | Modifier les questions, puis récupérer un nouveau lien pré-rempli (voir section 3 du `GUIDE-DE-GESTION.md`) pour remettre le site à jour. |
+| **Google Sheets** | Le tableau où toutes les réponses du Google Form s'accumulent automatiquement, ligne par ligne. | **Tous les jours**, idéalement. | Repérer les nouvelles lignes (nouvelles demandes) et les lignes surlignées (doublons, voir section 3bis du guide), puis **recontacter chaque nouvelle prospecte** par téléphone/WhatsApp/email dans les 24-48h. |
+| **Google Analytics 4** | Mesure le trafic du site : nombre de visiteurs, d'où ils viennent (Instagram, Google, direct...), quelles pages ils consultent. | **Chaque semaine.** | Regarder si le nombre de visiteurs progresse et d'où vient le trafic. Si une source (ex. Instagram) amène beaucoup de visites, refaire du contenu similaire pour l'alimenter. |
+| **Google Search Console** | Surveille comment Google "voit" ton site : pages indexées, erreurs éventuelles, requêtes qui amènent des visiteurs jusqu'à toi. | **1 fois par mois**, plus souvent juste après une mise en ligne importante. | Vérifier l'onglet **"Pages"** (pas d'erreur d'indexation). Si une page pose problème, utiliser **"Inspection d'URL" → "Demander une indexation"**. |
+| **Google Business Profile** | Fiche gratuite pouvant apparaître dans les résultats Google/Maps, avec avis clients. | **Dès qu'un avis arrive** (Google envoie un email de notification). | Lire l'avis et y **répondre** (même en 2 lignes, positif ou négatif) — ça montre que le compte est actif et suivi. |
+| **Instagram** (`@serena.inspires`) | Canal principal de contenu et de preuve sociale, relié au site dans les deux sens. | Usage habituel. | Garder le lien du site en bio et le rementionner de temps en temps en story — le site vient en complément, pas en remplacement. |
+| **Registrar de domaine** *(optionnel, pas encore actif)* | Si un nom de domaine personnalisé (`.com`/`.dz`) est acheté un jour, à la place de l'adresse `vercel.app` par défaut. | Seulement au moment de l'achat. | Suivre la section 2 du `GUIDE-DE-GESTION.md` pour relier le domaine à Vercel. |
+
+*(Les liens directs vers chacun de ces comptes sont dans `LIENS-UTILES.xlsx`.)*
 
 ---
 
-## Repère rapide : "quoi checker, à quelle fréquence"
+## Repère rapide : "quoi checker, à quelle fréquence, et pourquoi"
 
-- **Tous les jours** : Google Sheet (nouvelles demandes)
-- **Toutes les semaines** : Google Analytics (trafic)
-- **Tous les mois** : Google Search Console (référencement)
-- **À chaque avis reçu** : Google Business Profile
-- **À chaque modification du site** : vérifier que Vercel a bien republié la nouvelle version
+- **Tous les jours** → Google Sheet : recontacter les nouvelles prospectes.
+- **Toutes les semaines** → Google Analytics : suivre l'évolution du trafic et sa source.
+- **Tous les mois** → Google Search Console : s'assurer que le site reste bien indexé sans erreur.
+- **À chaque avis reçu** → Google Business Profile : répondre à l'avis.
+- **À chaque modification du site** → Vercel : confirmer que le déploiement est "Ready".
